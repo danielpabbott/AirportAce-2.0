@@ -1,19 +1,35 @@
-<ion-view view-title="Dashboard">
+<ion-view view-title="Airport Ace">
   <ion-content class="padding">
-    <center><h1>Airport Ace</h1></center>
-    <form class="form" action="index.html" method="post">
-      <label for="date">Today Is:</label>
-      <input id="date" type="date" name="data">
-      <label for="start">Start At:</label>
-      <select id="start"></select>
-      <label for="duration">Drive For:</label>
-      <select id="duration">
-        <option>2 hrs</option>
-        <option>4 hrs</option>
-        <option>6 hrs</option>
-      </select>
-      <label for="airport">Airport Code:</label>
-      <input id="airport" type="text" placeholder="DEN, LAX, DFW, etc">
-    </form>
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Today Is:</span>
+        <input type="date">
+      </label>
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Start At:
+        </div>
+        <select>
+          <option>11:00a</option>
+          <option selected>12:00p</option>
+          <option>1:00p</option>
+          <option>2:00p</option>
+        </select>
+      </label>
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Drive For:
+        </div>
+        <select>
+          <option value="2">2 hrs</option>
+          <option value="4">4 hrs</option>
+          <option value="6" selected>6 hrs</option>
+        </select>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Airport Code:</span>
+        <input type="text" placeholder="ex: DEN, DFW, LAX, etc">
+      </label>
+    </div>
   </ion-content>
 </ion-view>
